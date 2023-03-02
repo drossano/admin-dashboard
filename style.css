@@ -44,4 +44,26 @@ body{
 #main-content {
   grid-area: main-content;
   background-color: lightgray;
+  
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "projects announcements"
+                       "projects trending";
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#projects>.card {
+  background-color: white;
+}
+
+#announcements {
+  grid-area: announcements;
+}
+
+#trending {
+  grid-area: trending;
 }
