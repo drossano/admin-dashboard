@@ -33,7 +33,7 @@ h2 {
   
   display: grid;
   grid-template-rows: repeat(3, max-content);
-  gap: 8rem;
+  gap: 8em;
 }
 
 #sidebar ul{ 
@@ -44,6 +44,13 @@ h2 {
 #sidebar li {
   list-style-type: none;
 }
+
+#header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+
 
 #main-content {
   padding: 20px;
