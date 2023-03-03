@@ -44,10 +44,8 @@ body{
 #main-content {
   grid-area: main-content;
   background-color: lightgray;
-  
   display: grid;
-  grid-template-columns: 880px 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   grid-template-areas: "projects announcements"
                        "projects trending";
 }
@@ -64,7 +62,8 @@ body{
 
 #cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
   gap: 40px;
 }
 .card {
@@ -78,4 +77,28 @@ body{
 
 #trending {
   grid-area: trending;
+}
+
+#trending .card {
+  display: grid;
+  gap: 15px;
+}
+
+.trending-user {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "avatar user-name"
+                       "avatar trend";
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.user-name {
+  grid-area: user-name;
+}
+
+.trend {
+  grid-area: trend;
 }
