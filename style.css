@@ -47,10 +47,22 @@ h2 {
 
 #header {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+button {
+  width: 6em;
+  height: 2em;
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 2em;
+}
 
 #main-content {
   padding: 20px;
