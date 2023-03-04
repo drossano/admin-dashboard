@@ -50,6 +50,12 @@ h2 {
   grid-template-columns: 3fr 1fr;
 }
 
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 #greeting {
   display: flex;
   align-items: center;
