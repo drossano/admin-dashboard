@@ -68,7 +68,8 @@ h2 {
 #buttons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: right;
+  gap: 40px;
 }
 
 button {
