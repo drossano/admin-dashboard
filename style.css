@@ -33,6 +33,12 @@ body{
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+
 #dashboard {
   margin: 0;
   height:100%;
@@ -71,6 +77,11 @@ h2 {
 
 #sidebar li {
   list-style-type: none;
+  font-size: 1.25rem;
+}
+
+#sidebar a {
+  color: var(--sidebar-text);
 }
 
 #header {
