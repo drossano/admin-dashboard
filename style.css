@@ -248,6 +248,11 @@ button {
   height: 100%
 }
 
+#trending .avatar {
+  height: 4rem;
+  border-radius: 2rem;
+}
+
 .trending-user {
   display: grid;
   grid-template-columns: 1fr 4fr;
