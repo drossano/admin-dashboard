@@ -215,6 +215,7 @@ button {
 
 #announcements .card {
   height: 100%;
+  display: grid;
 }
 
 .divider {
@@ -236,31 +237,37 @@ button {
   grid-area: announcements;
 }
 
-#announcements .card {
-  display: grid;
-}
-
 #trending .card {
   height: 100%;
   display: grid;
-  gap: 15px;
+  gap: 0px;
+}
+
+.trending svg {
+  height: 100%
 }
 
 .trending-user {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 1rem;
   grid-template-areas: "avatar user-name"
                        "avatar trend";
 }
 
 .avatar {
   grid-area: avatar;
+  align-self: center;
+  justify-self: center;
 }
 
 .user-name {
   grid-area: user-name;
+  font-size: 1.25rem;
+  align-self: end;
 }
 
 .trend {
   grid-area: trend;
+  align-self: start;
 }
