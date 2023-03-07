@@ -127,10 +127,20 @@ h2 {
   gap: 1rem;
 }
 
+#profile .avatar {
+  height: 3rem;
+  border-radius: 1.5rem;
+}
+
 #greeting {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+#greeting .avatar {
+  height: 5rem;
+  border-radius: 2.5rem;
 }
 
 #greeting-text {
