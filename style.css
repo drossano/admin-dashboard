@@ -61,13 +61,13 @@ h2 {
 
 #sidebar {
   margin: 0;
-  padding: 1em 1em;
+  padding: 2em 2em;
   grid-area: sidebar;
   background-color: var(--sidebar);
   color: var(--sidebar-text);
   display: grid;
   grid-template-rows: repeat(3, max-content);
-  gap: 8em;
+  gap: 3em;
 }
 
 #sidebar ul{ 
@@ -80,8 +80,14 @@ h2 {
   font-size: 1.25rem;
 }
 
+#sidebar img {
+  height: 1.25rem;
+}
+
 #sidebar a {
   color: var(--sidebar-text);
+  display: flex;
+  gap: .75rem;
 }
 
 #header {
