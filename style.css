@@ -110,6 +110,7 @@ button {
 #projects {
   grid-area: projects;
   display: flex;
+  flex-direction: column;
 }
 
 
@@ -118,6 +119,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
   gap: 40px;
+  height: 100%;
 }
 .card {
   background-color: white;
