@@ -1,3 +1,19 @@
+:root {
+  --main: #16161a;
+  --background: #242629;
+  --sidebar: #7f5af0;
+  --border:#010101;
+  --card-paragraph: #94a1b2;
+  --card-header: #fffffe;
+  --header-text: #fffffe;
+  --button: #7f5af0;
+  --button-text: #fffffe;
+  --sidebar-text: #fffffe;
+  --main-heading: #fffffe;
+  --announcement-divider: #7e8c9e;
+  --search-background: #fffffe;
+}
+
 html, body {
   height: 100%;
 }
@@ -22,6 +38,7 @@ h2 {
 
 .heading {
   line-height: 1em;
+  color: var(--main-heading);
 }
 
 
@@ -29,8 +46,8 @@ h2 {
   margin: 0;
   padding: 1em 1em;
   grid-area: sidebar;
-  background-color: deepskyblue; 
-  
+  background-color: var(--sidebar);
+  color: var(--sidebar-text);
   display: grid;
   grid-template-rows: repeat(3, max-content);
   gap: 8em;
@@ -46,10 +63,12 @@ h2 {
 }
 
 #header {
+  background-color: var(--main);
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
   padding: 0 1em 0 1em;
+  color: var(--header-text);
 }
 
 #search {
@@ -59,6 +78,8 @@ h2 {
 #searchbar {
   width: 100%;
   height: 2rem;
+  border: none;
+  background-color: var(--search-background);
 }
 
 #profile {
@@ -86,15 +107,16 @@ h2 {
 button {
   width: 6em;
   height: 2em;
-  background-color: deepskyblue;
-  border: none;
+  background-color:var(--button);
+  color: var(--button-text);
   border-radius: 2em;
+  border: none;
 }
 
 #main-content {
   padding: 20px;
   grid-area: main-content;
-  background-color: lightgray;
+  background-color: var(--background);
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -122,8 +144,15 @@ button {
   height: 100%;
 }
 .card {
-  background-color: white;
+  background-color: var(--main);
   border-radius: 10px;
+  color: var(--card-paragraph)
+}
+
+.card h3,
+.card h4,
+.card a {
+  color: var(--card-header);
 }
 
 #announcements {
@@ -132,6 +161,11 @@ button {
 
 #announcements .card {
   height: 100%;
+}
+
+.divider {
+  background-color: var(--announcement-divider )  ;
+  height: 1px;
 }
 
 #trending{
