@@ -12,8 +12,7 @@
   --main-heading: #fffffe;
   --announcement-divider: #7e8c9e;
   --search-background: #fffffe;
-  
-  font-family: font;
+  --card-highlight: #2cb67d;
 }
 
 *  {
@@ -187,6 +186,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-left: .75rem solid var(--card-highlight);
 }
 
 .card h3,
