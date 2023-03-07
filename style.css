@@ -119,6 +119,7 @@ h2 {
   border: none;
   background-color: var(--search-background);
   border-radius: 1rem;
+  padding: 0 1rem;
 }
 
 #profile {
