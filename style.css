@@ -12,6 +12,17 @@
   --main-heading: #fffffe;
   --announcement-divider: #7e8c9e;
   --search-background: #fffffe;
+  
+  font-family: font;
+}
+
+*  {
+  font-family: 'Roboto';
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Regular.ttf);
 }
 
 html, body {
