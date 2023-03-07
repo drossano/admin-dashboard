@@ -213,10 +213,6 @@ button {
   height: 2rem;
 }
 
-#announcements {
-  grid-area: announcements;
-}
-
 #announcements .card {
   height: 100%;
 }
@@ -234,6 +230,14 @@ button {
 #announcements {
   display: flex;
   flex-direction: column;
+}
+
+#announcements {
+  grid-area: announcements;
+}
+
+#announcements .card {
+  display: grid;
 }
 
 #trending .card {
