@@ -166,6 +166,11 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  background-color: #684ac4;
+  cursor: pointer;
+}
+
 #main-content {
   padding: 20px;
   grid-area: main-content;
